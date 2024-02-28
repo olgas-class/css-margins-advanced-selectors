@@ -1,0 +1,28 @@
+/* Attribute selector */
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+.my-link:hover {
+  color: red;
+}
+
+.my-link:active {
+  color: green;
+}
+
+.my-link:visited {
+  color: cadetblue;
+}
+
+/* ul li:first-child {
+  border: 2px solid green;
+}
+
+ul li:last-child {
+  border: 2px solid red;
+} */
+
+ul li:nth-child(3n) {
+  background-color: gray;
+}
