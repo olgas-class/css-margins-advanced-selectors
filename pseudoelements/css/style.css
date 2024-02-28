@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/milano.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+
+/* Pseudoelementi nascono inline */
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+h1::after {
+  content: "AFTER";
+}
